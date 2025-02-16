@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:14.16-alpine3.20
+    ports:
+      - '5432:5432'  # Correct port mapping for PostgreSQL
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: db
+      POSTGRES_USER: login
+      POSTGRES_PASSWORD: 9mREsvXDs9Gk89Ef
